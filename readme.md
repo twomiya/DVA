@@ -20,10 +20,10 @@
 
  * 运行项目
 
- ```
- cd dva-demo
- npm start
- ```
+	 ```
+	 cd dva-demo
+	 npm start
+	 ```
 
 **2,去掉#**
 
