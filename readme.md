@@ -2,19 +2,21 @@
 
 **1,安装DVA**
 
-`npm install -g dva-cli`
+ * 安装
+
+	`npm install -g dva-cli`
 
  * 安装的过程中一直报错，就采用的cnpm安装方式就好了。
 
- `npm install -g cnpm --registry=https://registry.npm.taobao.org `
+	 `npm install -g cnpm --registry=https://registry.npm.taobao.org `
 
  * 查看dva版本
 
- `dva -v`
+ 	 `dva -v`
 
  * 创建新项目
 
- `dva new dva-demo`
+ 	 `dva new dva-demo`
 
  * 运行项目
 
