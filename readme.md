@@ -1,4 +1,4 @@
-## DVA
+## DVA(dva = React-Router + Redux + Redux-saga)
 
 **1,安装DVA**
 
@@ -38,3 +38,10 @@
 		history: createHistory(),
 	});
 	```
+**3,查看是否是单页面应用**
+
+* 查看同一网站的不同网址路径看内容是否相同
+
+`curl http://localhost:8000/counter`
+
+**4,model**

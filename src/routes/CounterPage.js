@@ -1,15 +1,14 @@
 
 import React from 'react';
-import { connect } from 'dva';
-function CounterPage() {
-  return (
+import Counter from '../components/Counter';
+
+const CounterPage = (props)=>{
+  return(
     <div>
-    CounterPage.js
+      <p>counter</p>
+      <Counter />
     </div>
-  );
+  )
 }
 
-CounterPage.propTypes = {
-};
-
-export default connect()(CounterPage);
+export default CounterPage;
