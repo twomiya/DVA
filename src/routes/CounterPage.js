@@ -1,14 +1,25 @@
 
 import React from 'react';
 import Counter from '../components/Counter';
+import {connect} from 'dva';
+import PropTypes from 'prop-types';
 
-const CounterPage = (props)=>{
+const CounterPage = ({counter})=>{
   return(
     <div>
       <p>counter</p>
-      <Counter />
+      <Counter count={counter.count} />
     </div>
   )
 }
 
-export default CounterPage;
+CounterPage.propTypes={
+  counter:PropTypes.object
+
+}
+const mapStateToProps = (state)=>{
+	return{
+		counter:state.counter
+	}
+}
+export default connect(mapStateToProps)(CounterPage);
