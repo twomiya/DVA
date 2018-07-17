@@ -8,7 +8,8 @@ export default {
   	count:2,
   },
   effects: {
-    *asyncAdd({ payload }, { call, put }) {  // eslint-disable-line
+    *asyncAdd({ payload }, { call, put,select}) {  // eslint-disable-line
+      yield select(state=>state.counter)
       yield call(delay,1000);
       yield put({ type: 'add' });
     },
