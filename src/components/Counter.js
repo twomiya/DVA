@@ -7,7 +7,8 @@ const Counter = (props) =>{
 		<div>
 		   {/* <h1>{props.counter.count}</h1> */}
 		   <h1>{props.count} </h1>
-		   <button>+</button>
+		   <button onClick={()=>{props.dispatch({type:'counter/add',name:'Ariel'})}}>+</button>
+		   <button onClick={()=>{props.dispatch({type:'counter/asyncAdd',name:'Ariel2'})}}>async+</button>
 		</div>
 		)
 }
